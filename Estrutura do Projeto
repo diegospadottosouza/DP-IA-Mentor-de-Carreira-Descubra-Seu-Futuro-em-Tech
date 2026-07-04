@@ -1,0 +1,12 @@
+IA-Mentor-de-Carreira/
+│
+├── README.md
+├── src/
+│   ├── mentor.py
+│   └── utils.py
+├── data/
+│   └── exemplos_perfis.json
+├── docs/
+│   └── guia_instalacao.md
+├── requirements.txt
+└── .gitignore
