@@ -1,0 +1,25 @@
+
+---
+
+## 🧑‍💻 Código Base (`src/mentor.py`)
+
+```python
+import streamlit as st
+
+def analisar_perfil(habilidades):
+    if "python" in habilidades.lower() and "sql" in habilidades.lower():
+        return "Data Science"
+    elif "javascript" in habilidades.lower():
+        return "Desenvolvimento Frontend"
+    elif "java" in habilidades.lower() or "c#" in habilidades.lower():
+        return "Desenvolvimento Backend"
+    else:
+        return "Explorar mais áreas de tecnologia"
+
+st.title("🤖 IA Mentor de Carreira")
+st.write("Descubra seu futuro em Tech!")
+
+habilidades = st.text_input("Digite suas habilidades:")
+if habilidades:
+    carreira = analisar_perfil(habilidades)
+    st.success(f"Você tem perfil para seguir carreira em **{carreira}**")
